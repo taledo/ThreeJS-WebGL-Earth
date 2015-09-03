@@ -1,0 +1,37 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WebGL Earth</title>
+	<style>
+		body { 
+			margin: 0; padding:0;
+			background:#000 url(images/galaxy_starfield.png) 0 0 no-repeat;
+			background-size:cover;
+		}
+    </style>
+</head>
+<body>
+	
+	<!-- Canvas happens here -->
+	<div class="container"></div>
+
+	<!-- Three JS Libs -->
+	<script src="js/libs/three.min.js"></script>
+	<script src="js/libs/Detector.js"></script>
+	<script src="js/libs/TrackballControls.js"></script>
+
+	<!-- Earth Generator -->
+	<script src="js/webgl-earth.js"></script>  
+
+	<script>
+		var earth = new Earth({
+			container: '.container',
+			rotate: true
+		});
+	</script>
+	
+</body>
+</html>
